@@ -135,7 +135,7 @@ InferAttributes<ISettings>, InferCreationAttributes<ISettings>
 > {
   id?: number;
   name: string;
-  value: string;
+  value: { [key: string]: string };
 }
 
 interface IUser extends Model<
