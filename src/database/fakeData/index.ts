@@ -1,9 +1,9 @@
 const settings = [
   {
     name: 'nextup_variables',
-    value: {
+    value: JSON.stringify({
       NEXTUP_TO_OWED_SPLIT_PERCENTAGE: '0.5',
-    },
+    }),
     updated_at: new Date(),
     created_at: new Date(),
   },
