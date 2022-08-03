@@ -1,41 +1,5 @@
 const settings = [
   {
-    name: 'APP_MAIL',
-    value: 'U2FsdGVkX19RgRtU64UV9OiOnnrFkcNkYy286iHlPhSrJGxmjeSOCxwHbj9muGiI',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
-    name: 'MAIL_PASSWORD',
-    value: 'U2FsdGVkX19o65Ze6vj+6zUV7vUWXjGmteLJ1DMRbtC+yVdLd23T3ZsMMdfCjy5j',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
-    name: 'VIEWLLIFT_EMAIL',
-    value: 'U2FsdGVkX19kmbIcBCaE7DBHUOCVgwynLo3MgCP0SqzH9FpUqXZAOdnkCB0/t9jB',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
-    name: 'VIEWLLIFT_PASSWORD',
-    value: 'U2FsdGVkX1+gjQ74lnSaYtZWX/9K1+ohZYyZjuUVg2M=',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
-    name: 'VIEWLIFT_ENDPOINT',
-    value: 'U2FsdGVkX1+BFfg41nt5o7vrCZMYXxLC7aUta170LvER86Ov2BbkUx+vwuxewC7pcTwFWEm+kvVZJ55pY91rhg==',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
-    name: 'VIEWLIFT_WATCHES_FETCH_LIMIT',
-    value: 'U2FsdGVkX19SKdFEvQ/4QnExTTT5PBr+W7biDi5+GgA=',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
     name: 'NEXTUP_TO_OWED_SPLIT_PERCENTAGE',
     value: 'U2FsdGVkX1+kMKue/OyIA4b/S7rNo2mQkQCwxru7Qos=',
     updated_at: new Date(),
