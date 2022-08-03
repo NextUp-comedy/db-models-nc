@@ -59,16 +59,6 @@ const roles = [
     updated_at: new Date(),
     created_at: new Date(),
   },
-  {
-    name: 'user',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
-  {
-    name: 'user',
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
 ];
 
 const users = [
@@ -97,7 +87,7 @@ const users = [
     created_at: new Date(),
   },
   {
-    username: 'zaher',
+    name: 'zaher',
     email: 'zaherabuamro@gmail.com',
     password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
     user_role_id: 3,
@@ -109,10 +99,10 @@ const users = [
     created_at: new Date(),
   },
   {
-    username: 'ibrahim',
+    name: 'ibrahim',
     email: 'ibrahim.jarada@gmail.com',
     password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
-    user_role_id: 4,
+    user_role_id: 3,
     acc_paid_revenue: 0,
     free_to_be_paid_revenue: 0,
     created_by: 1,
@@ -121,10 +111,10 @@ const users = [
     created_at: new Date(),
   },
   {
-    username: 'ayman',
+    name: 'ayman',
     email: 'ayman@gmail.com',
     password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
-    user_role_id: 5,
+    user_role_id: 3,
     acc_paid_revenue: 0,
     free_to_be_paid_revenue: 0,
     created_by: 1,
