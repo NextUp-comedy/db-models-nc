@@ -1,7 +1,9 @@
 const settings = [
   {
-    name: 'NEXTUP_TO_OWED_SPLIT_PERCENTAGE',
-    value: 'U2FsdGVkX1+kMKue/OyIA4b/S7rNo2mQkQCwxru7Qos=',
+    name: 'nextup_variables',
+    value: {
+      NEXTUP_TO_OWED_SPLIT_PERCENTAGE: '0.5',
+    },
     updated_at: new Date(),
     created_at: new Date(),
   },

@@ -7,17 +7,15 @@ const Settings = sequelize.define<ISettings>(
   {
     id: {
       type: DataTypes.INTEGER,
-      primaryKey: true,
       autoIncrement: true,
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
     },
     value: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      type: DataTypes.JSON,
+      defaultValue: '{}',
     },
   },
   {
