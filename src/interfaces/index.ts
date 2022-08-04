@@ -147,6 +147,7 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   password: string;
   googleId?: string;
   userRoleId: number;
+  userStatusId?: number;
   accPaidRevenue: number;
   freeToBePaidRevenue: number;
   createdBy: number;
@@ -165,6 +166,13 @@ InferAttributes<IWatches>, InferCreationAttributes<IWatches>
   updatedBy: number;
 }
 
+interface IUserStatus extends Model<
+InferAttributes<IUserStatus>, InferCreationAttributes<IUserStatus>
+> {
+  id?: number;
+  name: string;
+}
+
 export {
   IContent,
   IContentReport,
@@ -174,4 +182,5 @@ export {
   IWatches,
   IReport,
   IDatabase,
+  IUserStatus,
 };
