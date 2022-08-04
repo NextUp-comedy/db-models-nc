@@ -3,7 +3,7 @@ import sequelize from '../connections';
 import { IUserStatus } from '../../interfaces';
 
 const UserStatus = sequelize.define<IUserStatus>(
-  'user_status',
+  'user_statuses',
   {
     id: {
       type: DataTypes.INTEGER,
