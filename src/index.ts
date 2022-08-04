@@ -5,6 +5,7 @@ export {
   ContentReport,
   Report,
   UserRole,
+  UserStatus,
   User,
   Watches,
   ContentReportWatchesAssociation,

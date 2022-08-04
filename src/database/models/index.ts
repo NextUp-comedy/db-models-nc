@@ -5,3 +5,4 @@ export { default as Report } from './Report';
 export { default as UserRole } from './UserRole';
 export { default as User } from './User';
 export { default as Watches } from './Watches';
+export { default as UserStatus } from './UserStatus';
