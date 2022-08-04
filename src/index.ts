@@ -11,7 +11,8 @@ export {
   ReportContentReportAssociation,
 } from './database/index';
 export {
-  roles,
+  userRoles,
+  userStatus,
   settings,
   users,
 } from './database/fakeData';
