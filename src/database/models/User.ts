@@ -42,6 +42,9 @@ const User = sequelize.define<IUser>(
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
+    image: {
+      type: DataTypes.STRING,
+    },
     createdBy: {
       type: DataTypes.INTEGER,
     },
