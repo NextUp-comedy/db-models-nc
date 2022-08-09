@@ -151,7 +151,7 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   accPaidRevenue: number;
   freeToBePaidRevenue: number;
   createdBy: number;
-  updatedBy: number;
+  updatedBy?: number;
 }
 
 interface IWatches extends Model<
