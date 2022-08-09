@@ -5,12 +5,16 @@ import {
   ContentReport,
   Report,
   UserRole,
+  UserStatus,
   User,
   Watches,
 } from './models';
 
 UserRole.hasMany(User);
 User.belongsTo(UserRole, { as: 'userRole' });
+
+UserStatus.hasMany(User);
+User.belongsTo(UserStatus, { as: 'userStatus' });
 
 User.hasMany(Content);
 Content.belongsTo(User);
@@ -62,6 +66,7 @@ export {
   ContentReport,
   Report,
   UserRole,
+  UserStatus,
   User,
   Watches,
   ContentReportWatchesAssociation,

@@ -5,13 +5,15 @@ export {
   ContentReport,
   Report,
   UserRole,
+  UserStatus,
   User,
   Watches,
   ContentReportWatchesAssociation,
   ReportContentReportAssociation,
 } from './database/index';
 export {
-  roles,
+  userRoles,
+  userStatus,
   settings,
   users,
 } from './database/fakeData';

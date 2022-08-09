@@ -27,6 +27,10 @@ const User = sequelize.define<IUser>(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    userStatusId: {
+      type: DataTypes.INTEGER,
+      defaultValue: 1,
+    },
     googleId: {
       type: DataTypes.STRING,
     },
