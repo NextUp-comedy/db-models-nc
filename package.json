@@ -1,6 +1,6 @@
 {
   "name": "db-models-nc",
-  "version": "1.0.35",
+  "version": "1.0.36",
   "description": "Database models for NextUp Comedy Website",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
