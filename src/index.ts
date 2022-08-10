@@ -17,3 +17,14 @@ export {
   settings,
   users,
 } from './database/fakeData';
+export {
+  IContent,
+  IContentReport,
+  IUserRole,
+  ISettings,
+  IUser,
+  IWatches,
+  IReport,
+  IDatabase,
+  IUserStatus,
+} from './interfaces';

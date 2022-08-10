@@ -150,8 +150,9 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   userStatusId?: number;
   accPaidRevenue: number;
   freeToBePaidRevenue: number;
+  image?: string;
   createdBy: number;
-  updatedBy: number;
+  updatedBy?: number;
 }
 
 interface IWatches extends Model<
