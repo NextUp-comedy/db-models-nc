@@ -16,7 +16,7 @@ const userRoles = [
     created_at: new Date(),
   },
   {
-    name: 'super_admin',
+    name: 'master_admin',
     updated_at: new Date(),
     created_at: new Date(),
   },
@@ -70,8 +70,8 @@ const users = [
     created_at: new Date(),
   },
   {
-    name: 'Super Admin',
-    email: 'superadmin@gmail.com',
+    name: 'Master Admin',
+    email: 'masteradmin@gmail.com',
     password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
     user_role_id: 2,
     user_status_id: 2,
