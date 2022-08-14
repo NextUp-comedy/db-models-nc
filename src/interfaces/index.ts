@@ -76,7 +76,7 @@ interface IContent extends Model<
 InferAttributes<IContent>, InferCreationAttributes<IContent>
 > {
   id: string;
-  userId?: number;
+  userId?: number | null;
   title: string;
   publishDate: number;
   permalink: string;
