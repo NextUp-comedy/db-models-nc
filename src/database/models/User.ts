@@ -45,6 +45,9 @@ const User = sequelize.define<IUser>(
     image: {
       type: DataTypes.STRING,
     },
+    rejectionReason: {
+      type: DataTypes.STRING,
+    },
     createdBy: {
       type: DataTypes.INTEGER,
     },
