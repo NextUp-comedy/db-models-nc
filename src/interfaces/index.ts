@@ -151,6 +151,7 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   accPaidRevenue: number;
   freeToBePaidRevenue: number;
   image?: string;
+  rejectionReason?: string;
   createdBy: number;
   updatedBy?: number;
 }
