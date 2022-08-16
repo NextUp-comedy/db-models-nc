@@ -92,7 +92,7 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   updatedBy: number;
   runtime: number;
   primaryCategory:string;
-  recoveredCosts: number;
+  recoveredCosts: string;
 }
 
 interface IContentReport extends Model<
