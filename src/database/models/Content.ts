@@ -47,17 +47,20 @@ const Content = sequelize.define<IContent>(
     filmingCosts: {
       type: DataTypes.DECIMAL,
     },
+    recoveredCosts: {
+      type: DataTypes.DECIMAL,
+    },
     paidToOwedAmount: {
       type: DataTypes.DECIMAL,
+    },
+    primaryCategory: {
+      type: DataTypes.STRING,
     },
     createdBy: {
       type: DataTypes.INTEGER,
     },
     updatedBy: {
       type: DataTypes.INTEGER,
-    },
-    primaryCategory: {
-      type: DataTypes.STRING,
     },
   },
   {
