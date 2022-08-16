@@ -6,3 +6,4 @@ export { default as UserRole } from './UserRole';
 export { default as User } from './User';
 export { default as Watches } from './Watches';
 export { default as UserStatus } from './UserStatus';
+export { default as Transactions } from './Transactions';

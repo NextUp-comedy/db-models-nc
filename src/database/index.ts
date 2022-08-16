@@ -8,6 +8,7 @@ import {
   UserStatus,
   User,
   Watches,
+  Transactions,
 } from './models';
 
 UserRole.hasMany(User);
@@ -71,4 +72,5 @@ export {
   Watches,
   ContentReportWatchesAssociation,
   ReportContentReportAssociation,
+  Transactions,
 };

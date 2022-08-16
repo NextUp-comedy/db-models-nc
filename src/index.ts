@@ -8,6 +8,7 @@ export {
   UserStatus,
   User,
   Watches,
+  Transactions,
   ContentReportWatchesAssociation,
   ReportContentReportAssociation,
 } from './database/index';
