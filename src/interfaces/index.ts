@@ -92,6 +92,7 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   updatedBy: number;
   runtime: number;
   primaryCategory:string;
+  recoveredCosts: number;
 }
 
 interface IContentReport extends Model<
@@ -175,6 +176,22 @@ InferAttributes<IUserStatus>, InferCreationAttributes<IUserStatus>
   name: string;
 }
 
+interface ITransactions extends Model<
+InferAttributes<ITransactions>, InferCreationAttributes<ITransactions>
+> {
+  id?: number;
+  contentId: string;
+  nextUpAccRevenue: number;
+  owedAccRevenue: number;
+  prevNextUpAccRevenue: number;
+  prevOwedAccRevenue: number;
+  recoveredCosts: number;
+  prevRecoveredCosts: number;
+  contentReportId : number;
+  revenue: number;
+  nextUpToOwedSplitPercentage: number;
+}
+
 export {
   IContent,
   IContentReport,
@@ -185,4 +202,5 @@ export {
   IReport,
   IDatabase,
   IUserStatus,
+  ITransactions,
 };
