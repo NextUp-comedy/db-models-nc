@@ -107,7 +107,10 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   updatedBy: number;
   tvodTicketsCount: number;
   tvodSeconds: number;
-  watches?: IWatchedStream[]
+  watches?: IWatchedStream[];
+  nextupRevenue: string;
+  owedRevenue: string;
+  coveredSplittingIntervalPercentage: string;
 }
 
 interface IReport extends Model<
