@@ -40,7 +40,7 @@ const ContentReport = sequelize.define<IContentReport>(
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
-    splittingTimespanPercentage: {
+    beforeExpiryReportDaysPercentage: {
       type: DataTypes.DECIMAL,
     },
     createdBy: {

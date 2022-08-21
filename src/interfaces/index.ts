@@ -110,7 +110,7 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   watches?: IWatchedStream[];
   nextupRevenue: string;
   owedRevenue: string;
-  splittingTimespanPercentage: string;
+  beforeExpiryReportDaysPercentage: string;
 }
 
 interface IReport extends Model<
