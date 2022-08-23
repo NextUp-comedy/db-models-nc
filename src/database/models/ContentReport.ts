@@ -34,11 +34,9 @@ const ContentReport = sequelize.define<IContentReport>(
     },
     nextupRevenue: {
       type: DataTypes.DECIMAL,
-      allowNull: false,
     },
     owedRevenue: {
       type: DataTypes.DECIMAL,
-      allowNull: false,
     },
     beforeExpiryReportDaysPercentage: {
       type: DataTypes.DECIMAL,
