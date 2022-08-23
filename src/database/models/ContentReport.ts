@@ -43,6 +43,18 @@ const ContentReport = sequelize.define<IContentReport>(
     beforeExpiryReportDaysPercentage: {
       type: DataTypes.DECIMAL,
     },
+    beforeExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    splittableBeforeExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    reimbursementBeforeExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    afterExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
     createdBy: {
       type: DataTypes.INTEGER,
     },

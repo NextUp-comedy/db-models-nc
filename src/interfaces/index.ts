@@ -108,9 +108,13 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   tvodTicketsCount: number;
   tvodSeconds: number;
   watches?: IWatchedStream[];
-  nextupRevenue: string;
-  owedRevenue: string;
-  beforeExpiryReportDaysPercentage: string;
+  nextupRevenue: string | null;
+  owedRevenue: string | null;
+  beforeExpiryReportDaysPercentage: string | null;
+  beforeExpRevenue: string | null;
+  splittableBeforeExpRevenue:string | null;
+  reimbursementBeforeExpRevenue:string | null;
+  afterExpRevenue:string | null;
 }
 
 interface IReport extends Model<
