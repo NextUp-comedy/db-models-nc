@@ -102,7 +102,7 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   contentId: string;
   reportId?: number;
   watchedSeconds: number;
-  revenue: number;
+  revenue: string;
   createdBy: number;
   updatedBy: number;
   tvodTicketsCount: number;
