@@ -83,9 +83,9 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   nextUpAccRevenue: string;
   owedAccRevenue: string;
   launchDate?: string;
-  advance?: number;
-  feePaid?: number;
-  filmingCosts?: number;
+  advance?: string;
+  feePaid?: string;
+  filmingCosts?: string;
   paidToOwedAmount?: number;
   freeToBePaid?: number;
   createdBy: number;
