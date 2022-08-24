@@ -63,7 +63,7 @@ interface IAccumulatedWatchesDurationPerContent {
   contentId: string;
   watchedSeconds: number;
   watches: IDbWatches[];
-  revenue: number;
+  revenue: string;
   reportId?: number;
   createdBy: number;
   updatedBy: number;
