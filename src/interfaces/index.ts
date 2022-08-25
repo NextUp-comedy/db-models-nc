@@ -1,3 +1,4 @@
+import Big from 'big.js';
 import {
   InferAttributes,
   InferCreationAttributes,
@@ -63,13 +64,21 @@ interface IAccumulatedWatchesDurationPerContent {
   contentId: string;
   watchedSeconds: number;
   watches: IDbWatches[];
-  revenue: string;
+  revenue: string | Big;
   reportId?: number;
   createdBy: number;
   updatedBy: number;
   tvodTicketsCount: number;
   tvodSeconds: number;
   title?: string;
+  nextupRevenue?: string | Big | null;
+  owedRevenue?: string | Big | null;
+  beforeExpiryReportDaysPercentage?: string | Big | null;
+  beforeExpRevenue?: string | Big | null;
+  splittableBeforeExpRevenue?:string | Big | null;
+  reimbursementBeforeExpRevenue?:string | Big | null;
+  afterExpRevenue?:string | Big | null;
+
 }
 
 interface IContent extends Model<
