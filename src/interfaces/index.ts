@@ -83,9 +83,9 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   nextUpAccRevenue: string;
   owedAccRevenue: string;
   launchDate?: string;
-  advance?: number;
-  feePaid?: number;
-  filmingCosts?: number;
+  advance?: string;
+  feePaid?: string;
+  filmingCosts?: string;
   paidToOwedAmount?: number;
   freeToBePaid?: number;
   createdBy: number;
@@ -102,12 +102,19 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   contentId: string;
   reportId?: number;
   watchedSeconds: number;
-  revenue: number;
+  revenue: string;
   createdBy: number;
   updatedBy: number;
   tvodTicketsCount: number;
   tvodSeconds: number;
-  watches?: IWatchedStream[]
+  watches?: IWatchedStream[];
+  nextupRevenue: string | null;
+  owedRevenue: string | null;
+  beforeExpiryReportDaysPercentage: string | null;
+  beforeExpRevenue: string | null;
+  splittableBeforeExpRevenue:string | null;
+  reimbursementBeforeExpRevenue:string | null;
+  afterExpRevenue:string | null;
 }
 
 interface IReport extends Model<

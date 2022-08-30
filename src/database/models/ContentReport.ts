@@ -26,16 +26,37 @@ const ContentReport = sequelize.define<IContentReport>(
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
-    createdBy: {
-      type: DataTypes.INTEGER,
-    },
-    updatedBy: {
-      type: DataTypes.INTEGER,
-    },
     tvodTicketsCount: {
       type: DataTypes.INTEGER,
     },
     tvodSeconds: {
+      type: DataTypes.INTEGER,
+    },
+    nextupRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    owedRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    beforeExpiryReportDaysPercentage: {
+      type: DataTypes.DECIMAL,
+    },
+    beforeExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    splittableBeforeExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    reimbursementBeforeExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    afterExpRevenue: {
+      type: DataTypes.DECIMAL,
+    },
+    createdBy: {
+      type: DataTypes.INTEGER,
+    },
+    updatedBy: {
       type: DataTypes.INTEGER,
     },
   },
