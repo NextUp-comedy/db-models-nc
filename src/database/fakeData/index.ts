@@ -3,9 +3,26 @@ const settings = [
     name: 'nextup_variables',
     value: JSON.stringify({
       NEXTUP_TO_OWED_SPLIT_PERCENTAGE: '0.5',
+      SYSTEM_ACTIVATING_DATE: '2022-08-24',
+      FETCH_MAX_COUNT: '10',
+      EXPIRED_AFTER_IN_YEARS: '2',
     }),
     updated_at: new Date(),
     created_at: new Date(),
+  },
+  {
+    name: 'viewlift_variables',
+    values: JSON.stringify({
+      VIEWLLIFT_EMAIL: 'ibrahim.jarada@gmail.com',
+      VIEWLIFT_ENDPOINT: 'https://export-api.viewlift.com',
+      VIEWLIFT_WATCHES_FETCH_LIMIT: '10',
+    }),
+  },
+  {
+    name: 'encrypted_variables',
+    value: JSON.stringify({
+      VIEWLLIFT_PASSWORD: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
+    }),
   },
 ];
 
