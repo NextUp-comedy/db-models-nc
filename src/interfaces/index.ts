@@ -147,8 +147,12 @@ InferAttributes<IUserRole>, InferCreationAttributes<IUserRole>
   name: string;
 }
 
-interface IVariables {
-  variables: {
+interface ISettings extends Model<
+InferAttributes<ISettings>, InferCreationAttributes<ISettings>
+> {
+  id?: number;
+  name: string;
+  value: {
     regularVariables: {
       nextupToOwedSplitPercentage: string;
       systemActivationDate: string;
@@ -161,15 +165,7 @@ interface IVariables {
     encryptedVariables: {
       viewliftPassword: string;
     }
-  }
-}
-
-interface ISettings extends Model<
-InferAttributes<ISettings>, InferCreationAttributes<ISettings>
-> {
-  id?: number;
-  name: string;
-  value: IVariables;
+  };
 }
 
 interface IUser extends Model<
