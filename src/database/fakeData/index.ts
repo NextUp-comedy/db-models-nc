@@ -18,14 +18,6 @@ const settings = [
     updated_at: new Date(),
     created_at: new Date(),
   },
-  {
-    name: 'encrypted_variables',
-    value: JSON.stringify({
-      VIEWLIFT_PASSWORD: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
-    }),
-    updated_at: new Date(),
-    created_at: new Date(),
-  },
 ];
 
 const userRoles = [
