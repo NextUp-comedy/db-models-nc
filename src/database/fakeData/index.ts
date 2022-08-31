@@ -1,14 +1,19 @@
 const settings = [
   {
-    name: 'regular_variables',
+    name: 'variables',
     value: JSON.stringify({
-      NEXTUP_TO_OWED_SPLIT_PERCENTAGE: '0.5',
-      SYSTEM_ACTIVATING_DATE: '2022-08-24',
-      FETCH_MAX_COUNT: '10',
-      EXPIRED_AFTER_IN_YEARS: '2',
-      VIEWLIFT_EMAIL: 'ibrahim.jarada@gmail.com',
-      VIEWLIFT_ENDPOINT: 'https://export-api.viewlift.com',
-      VIEWLIFT_WATCHES_FETCH_LIMIT: '1000',
+      regularVariables: {
+        nextupToOwedSplitPercentage: '0.5',
+        systemActivationDate: '2022-08-30',
+        fetchMaxCount: '10',
+        expiredAfterInYears: '2',
+        viewliftEmail: 'ibrahim.jarada@gmail.com',
+        viewliftEndpoint: 'https://export-api.viewlift.com',
+        viewliftWatchesFetchLimit: '1000',
+      },
+      encryptedVariables: {
+        viewliftPassword: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
+      },
     }),
     updated_at: new Date(),
     created_at: new Date(),
