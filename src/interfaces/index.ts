@@ -147,12 +147,29 @@ InferAttributes<IUserRole>, InferCreationAttributes<IUserRole>
   name: string;
 }
 
+interface IVariables {
+  variables: {
+    regularVariables: {
+      nextupToOwedSplitPercentage: string;
+      systemActivationDate: string;
+      fetchMaxCount: string;
+      expiredAfterInYears: string;
+      viewliftEmail: string;
+      viewliftEndpoint: string;
+      viewliftWatchesFetchLimit: string;
+    },
+    encryptedVariables: {
+      viewliftPassword: string;
+    }
+  }
+}
+
 interface ISettings extends Model<
 InferAttributes<ISettings>, InferCreationAttributes<ISettings>
 > {
   id?: number;
   name: string;
-  value: { [key: string]: string };
+  value: IVariables;
 }
 
 interface IUser extends Model<
