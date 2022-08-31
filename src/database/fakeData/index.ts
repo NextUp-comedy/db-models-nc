@@ -6,7 +6,7 @@ const settings = [
       SYSTEM_ACTIVATING_DATE: '2022-08-24',
       FETCH_MAX_COUNT: '10',
       EXPIRED_AFTER_IN_YEARS: '2',
-      VIEWLLIFT_EMAIL: 'ibrahim.jarada@gmail.com',
+      VIEWLIFT_EMAIL: 'ibrahim.jarada@gmail.com',
       VIEWLIFT_ENDPOINT: 'https://export-api.viewlift.com',
       VIEWLIFT_WATCHES_FETCH_LIMIT: '10',
     }),
