@@ -8,7 +8,7 @@ const settings = [
       EXPIRED_AFTER_IN_YEARS: '2',
       VIEWLIFT_EMAIL: 'ibrahim.jarada@gmail.com',
       VIEWLIFT_ENDPOINT: 'https://export-api.viewlift.com',
-      VIEWLIFT_WATCHES_FETCH_LIMIT: '10',
+      VIEWLIFT_WATCHES_FETCH_LIMIT: '1000',
     }),
     updated_at: new Date(),
     created_at: new Date(),
