@@ -16,7 +16,7 @@ const settings = [
   {
     name: 'encrypted_variables',
     value: JSON.stringify({
-      VIEWLLIFT_PASSWORD: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
+      VIEWLIFT_PASSWORD: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
     }),
     updated_at: new Date(),
     created_at: new Date(),
