@@ -28,4 +28,5 @@ export {
   IReport,
   IDatabase,
   IUserStatus,
+  IVariables,
 } from './interfaces';

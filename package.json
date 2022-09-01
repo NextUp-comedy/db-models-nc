@@ -1,6 +1,6 @@
 {
   "name": "db-models-nc",
-  "version": "1.1.21",
+  "version": "1.1.37",
   "description": "Database models for NextUp Comedy Website",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/NextUp-comedy/db-models-nc#readme",
   "dependencies": {
+    "@types/big.js": "^6.1.5",
     "dotenv": "^16.0.1",
     "joi": "^17.6.0",
     "pg": "^8.7.3",

@@ -1,3 +1,4 @@
+import Big from 'big.js';
 import {
   InferAttributes,
   InferCreationAttributes,
@@ -63,13 +64,21 @@ interface IAccumulatedWatchesDurationPerContent {
   contentId: string;
   watchedSeconds: number;
   watches: IDbWatches[];
-  revenue: number;
+  revenue: string | Big;
   reportId?: number;
   createdBy: number;
   updatedBy: number;
   tvodTicketsCount: number;
   tvodSeconds: number;
   title?: string;
+  nextupRevenue?: string | Big | null;
+  owedRevenue?: string | Big | null;
+  beforeExpiryReportDaysPercentage?: string | Big | null;
+  beforeExpRevenue?: string | Big | null;
+  splittableBeforeExpRevenue?:string | Big | null;
+  reimbursementBeforeExpRevenue?:string | Big | null;
+  afterExpRevenue?:string | Big | null;
+
 }
 
 interface IContent extends Model<
@@ -138,12 +147,25 @@ InferAttributes<IUserRole>, InferCreationAttributes<IUserRole>
   name: string;
 }
 
-interface ISettings extends Model<
-InferAttributes<ISettings>, InferCreationAttributes<ISettings>
-> {
+interface IVariables {
+  regularVariables: {
+    nextupToOwedSplitPercentage: string;
+    systemActivationDate: string;
+    fetchMaxCount: string;
+    expiredAfterInYears: string;
+    viewliftEmail: string;
+    viewliftEndpoint: string;
+    viewliftWatchesFetchLimit: string;
+  };
+  encryptedVariables: {
+    viewliftPassword: string;
+  };
+}
+
+interface ISettings extends Model<InferAttributes<ISettings>, InferCreationAttributes<ISettings>> {
   id?: number;
   name: string;
-  value: { [key: string]: string };
+  value: string | IVariables;
 }
 
 interface IUser extends Model<
@@ -210,4 +232,5 @@ export {
   IDatabase,
   IUserStatus,
   ITransactions,
+  IVariables,
 };
