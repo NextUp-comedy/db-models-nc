@@ -232,4 +232,5 @@ export {
   IDatabase,
   IUserStatus,
   ITransactions,
+  IVariables,
 };
