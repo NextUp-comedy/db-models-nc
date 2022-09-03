@@ -303,6 +303,33 @@ const users = [
     updated_at: new Date(),
     created_at: new Date(),
   },
+  {
+    name: 'Abdalla Abuamro',
+    email: 'abdalla.abuamro@gmail.com',
+    password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
+    user_role_id: 4,
+    user_status_id: 1,
+    acc_paid_revenue: 0,
+    free_to_be_paid_revenue: 0,
+    image: 'https://nextup-comedy-bucket-gfs.s3.eu-west-2.amazonaws.com/2/1660034083405.jpeg',
+    created_by: 1,
+    updated_by: 1,
+    updated_at: new Date(),
+    created_at: new Date(),
+  },
+  {
+    name: 'Lina Ebeid',
+    email: 'lina.ebied@gmail.com',
+    password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
+    user_role_id: 4,
+    user_status_id: 1,
+    acc_paid_revenue: 0,
+    free_to_be_paid_revenue: 0,
+    created_by: 1,
+    updated_by: 1,
+    updated_at: new Date(),
+    created_at: new Date(),
+  },
 ];
 
 export {
