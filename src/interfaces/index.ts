@@ -165,7 +165,7 @@ interface IVariables {
 interface ISettings extends Model<InferAttributes<ISettings>, InferCreationAttributes<ISettings>> {
   id?: number;
   name: string;
-  value: string | IVariables;
+  value: IVariables;
 }
 
 interface IUser extends Model<
