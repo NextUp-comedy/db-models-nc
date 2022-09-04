@@ -6,8 +6,8 @@ import {
 } from 'sequelize';
 
 interface IDatabase {
-  url: string;
-  secretKey: string;
+  DATABASE_URL: string;
+  ENCRYPTION_SECRET_KEY: string;
 }
 
 interface IBasicContent {

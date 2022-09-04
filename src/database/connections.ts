@@ -1,7 +1,7 @@
 import { Sequelize } from 'sequelize';
 import config from '../config';
 
-const connectionString = config.url;
+const connectionString = config.DATABASE_URL;
 
 const sequelize = new Sequelize(connectionString, {
   define: { underscored: true },
