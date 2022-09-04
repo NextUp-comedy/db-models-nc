@@ -14,6 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const envVarsSchema = Joi.object({
   DATABASE_URL: Joi.string().uri().required(),
+  SECRET_KEY: Joi.string().required(),
 }).unknown().required();
 
 const config = (): IDatabase => {
@@ -25,6 +26,7 @@ const config = (): IDatabase => {
 
   return {
     url: envVars.DATABASE_URL,
+    secretKey: envVars.SECRET_KEY,
   };
 };
 export default config();

@@ -7,6 +7,7 @@ import {
 
 interface IDatabase {
   url: string;
+  secretKey: string;
 }
 
 interface IBasicContent {
@@ -162,6 +163,17 @@ interface IVariables {
   };
 }
 
+interface IDashboardSettings {
+  nextUpToOwedSplitPercentage: string;
+  systemActivationDate: string;
+  maxCount: number;
+  expiredAfterInYears: number;
+  email: string;
+  viewliftEndpoint: string;
+  limit: number;
+  password: string;
+}
+
 interface ISettings extends Model<InferAttributes<ISettings>, InferCreationAttributes<ISettings>> {
   id?: number;
   name: string;
@@ -233,4 +245,5 @@ export {
   IUserStatus,
   ITransactions,
   IVariables,
+  IDashboardSettings,
 };

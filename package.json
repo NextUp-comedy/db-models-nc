@@ -27,12 +27,14 @@
   "homepage": "https://github.com/NextUp-comedy/db-models-nc#readme",
   "dependencies": {
     "@types/big.js": "^6.1.5",
+    "crypto-js": "^4.1.1",
     "dotenv": "^16.0.1",
     "joi": "^17.6.0",
     "pg": "^8.7.3",
     "sequelize": "^6.21.3"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
     "eslint": "^8.21.0",
