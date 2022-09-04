@@ -29,4 +29,6 @@ export {
   IDatabase,
   IUserStatus,
   IVariables,
+  IDashboardSettings,
 } from './interfaces';
+export { default as getDashboardSettings } from './utils';
