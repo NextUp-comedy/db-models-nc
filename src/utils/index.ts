@@ -3,7 +3,7 @@ import { Settings } from '../database';
 import { IDashboardSettings } from '../interfaces';
 import config from '../config';
 
-const { secretKey } = config;
+const { ENCRYPTION_SECRET_KEY } = config;
 
 const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   const settings = (await Settings.findOne({ where: { name: 'variables' } }))?.value;
@@ -38,7 +38,7 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   // ? VIEWLIFT_PASSWORD
 
   password = AES
-    .decrypt(password, secretKey)
+    .decrypt(password, ENCRYPTION_SECRET_KEY)
     .toString(enc.Utf8);
 
   return {
