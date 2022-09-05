@@ -103,6 +103,7 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   runtime: number;
   primaryCategory:string;
   recoveredCosts: string;
+  contentReports?: IContentReport[];
 }
 
 interface IContentReport extends Model<
@@ -125,6 +126,7 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   splittableBeforeExpRevenue:string | null;
   reimbursementBeforeExpRevenue:string | null;
   afterExpRevenue:string | null;
+  report?:IReport;
 }
 
 interface IReport extends Model<
