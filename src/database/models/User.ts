@@ -34,11 +34,11 @@ const User = sequelize.define<IUser>(
     googleId: {
       type: DataTypes.STRING,
     },
-    accPaidRevenue: {
+    totalRevenue: {
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
-    freeToBePaidRevenue: {
+    paidRevenue: {
       type: DataTypes.DECIMAL,
       allowNull: false,
     },

@@ -96,8 +96,6 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   advance?: string;
   feePaid?: string;
   filmingCosts?: string;
-  paidToOwedAmount?: number;
-  freeToBePaid?: number;
   createdBy: number;
   updatedBy: number;
   runtime: number;
@@ -192,8 +190,8 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   googleId?: string;
   userRoleId: number;
   userStatusId?: number;
-  accPaidRevenue: number;
-  freeToBePaidRevenue: number;
+  totalRevenue: number;
+  paidRevenue: number;
   image?: string;
   rejectionReason?: string;
   createdBy: number;

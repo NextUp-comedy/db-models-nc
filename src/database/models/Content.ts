@@ -38,9 +38,6 @@ const Content = sequelize.define<IContent>(
     owedAccRevenue: {
       type: DataTypes.DECIMAL,
     },
-    freeToBePaid: {
-      type: DataTypes.DECIMAL,
-    },
     feePaid: {
       type: DataTypes.DECIMAL,
     },
@@ -48,9 +45,6 @@ const Content = sequelize.define<IContent>(
       type: DataTypes.DECIMAL,
     },
     recoveredCosts: {
-      type: DataTypes.DECIMAL,
-    },
-    paidToOwedAmount: {
       type: DataTypes.DECIMAL,
     },
     primaryCategory: {
