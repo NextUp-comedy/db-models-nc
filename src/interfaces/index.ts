@@ -96,8 +96,6 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   advance?: string;
   feePaid?: string;
   filmingCosts?: string;
-  paidToOwedAmount?: number;
-  freeToBePaid?: number;
   createdBy: number;
   updatedBy: number;
   runtime: number;
