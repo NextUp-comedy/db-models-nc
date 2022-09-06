@@ -192,8 +192,8 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   googleId?: string;
   userRoleId: number;
   userStatusId?: number;
-  accPaidRevenue: number;
-  freeToBePaidRevenue: number;
+  totalRevenue: number;
+  paidRevenue: number;
   image?: string;
   rejectionReason?: string;
   createdBy: number;
