@@ -19,7 +19,7 @@ export {
   userStatus,
   settings,
   users,
-  payoutstatuses,
+  payoutStatuses,
 } from './database/fakeData';
 export {
   IContent,

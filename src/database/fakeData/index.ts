@@ -66,7 +66,7 @@ const userStatus = [
   },
 ];
 
-const payoutstatuses = userStatus.slice(0, 3);
+const payoutStatuses = userStatus.slice(0, 3);
 
 const users = [
   {
@@ -339,5 +339,5 @@ export {
   userRoles,
   userStatus,
   users,
-  payoutstatuses,
+  payoutStatuses,
 };
