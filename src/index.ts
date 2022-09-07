@@ -35,5 +35,6 @@ export {
   IDashboardSettings,
   IPayout,
   IPayoutStatus,
+  ICustomUser,
 } from './interfaces';
 export { default as getDashboardSettings } from './utils';
