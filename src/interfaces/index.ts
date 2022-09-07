@@ -190,8 +190,8 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   googleId?: string;
   userRoleId: number;
   userStatusId?: number;
-  totalRevenue: number;
-  paidRevenue: number;
+  totalRevenue: number | Big | string;
+  paidRevenue: number | Big | string;
   image?: string;
   rejectionReason?: string;
   createdBy: number;
