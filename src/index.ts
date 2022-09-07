@@ -9,6 +9,8 @@ export {
   User,
   Watches,
   Transactions,
+  Payout,
+  PayoutStatus,
   ContentReportWatchesAssociation,
   ReportContentReportAssociation,
 } from './database/index';
@@ -17,6 +19,7 @@ export {
   userStatus,
   settings,
   users,
+  payoutStatuses,
 } from './database/fakeData';
 export {
   IContent,
@@ -30,5 +33,7 @@ export {
   IUserStatus,
   IVariables,
   IDashboardSettings,
+  IPayout,
+  IPayoutStatus,
 } from './interfaces';
 export { default as getDashboardSettings } from './utils';

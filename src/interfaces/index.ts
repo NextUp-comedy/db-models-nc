@@ -190,8 +190,8 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   googleId?: string;
   userRoleId: number;
   userStatusId?: number;
-  totalRevenue: number;
-  paidRevenue: number;
+  totalRevenue: number | Big | string;
+  paidRevenue: number | Big | string;
   image?: string;
   rejectionReason?: string;
   createdBy: number;
@@ -212,6 +212,25 @@ InferAttributes<IWatches>, InferCreationAttributes<IWatches>
 
 interface IUserStatus extends Model<
 InferAttributes<IUserStatus>, InferCreationAttributes<IUserStatus>
+> {
+  id?: number;
+  name: string;
+}
+
+interface IPayout extends Model<
+InferAttributes<IPayout>, InferCreationAttributes<IPayout>
+> {
+  id?: number;
+  userId?: number;
+  payoutStatusId: number;
+  amount: number | string;
+  rejectionReason?: string;
+  createdBy: number;
+  updatedBy: number;
+}
+
+interface IPayoutStatus extends Model<
+InferAttributes<IPayoutStatus>, InferCreationAttributes<IPayoutStatus>
 > {
   id?: number;
   name: string;
@@ -246,4 +265,6 @@ export {
   ITransactions,
   IVariables,
   IDashboardSettings,
+  IPayout,
+  IPayoutStatus,
 };

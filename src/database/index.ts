@@ -9,6 +9,8 @@ import {
   User,
   Watches,
   Transactions,
+  Payout,
+  PayoutStatus,
 } from './models';
 
 UserRole.hasMany(User);
@@ -60,6 +62,15 @@ Watches.belongsTo(User, { foreignKey: 'createdBy' });
 User.hasMany(Watches, { foreignKey: 'updatedBy' });
 Watches.belongsTo(User, { foreignKey: 'updatedBy' });
 
+User.hasMany(Payout, { foreignKey: 'createdBy' });
+Payout.belongsTo(User, { foreignKey: 'createdBy' });
+
+User.hasMany(Payout, { foreignKey: 'updatedBy' });
+Payout.belongsTo(User, { foreignKey: 'updatedBy' });
+
+PayoutStatus.hasMany(Payout);
+Payout.belongsTo(PayoutStatus, { as: 'payoutStatus' });
+
 export {
   sequelize,
   Settings,
@@ -73,4 +84,6 @@ export {
   ContentReportWatchesAssociation,
   ReportContentReportAssociation,
   Transactions,
+  Payout,
+  PayoutStatus,
 };
