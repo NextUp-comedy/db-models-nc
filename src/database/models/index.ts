@@ -7,3 +7,5 @@ export { default as User } from './User';
 export { default as Watches } from './Watches';
 export { default as UserStatus } from './UserStatus';
 export { default as Transactions } from './Transactions';
+export { default as Payout } from './Payout';
+export { default as PayoutStatus } from './PayoutStatus';

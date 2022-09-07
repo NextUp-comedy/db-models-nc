@@ -66,6 +66,8 @@ const userStatus = [
   },
 ];
 
+const payoutstatuses = userStatus.slice(0, 3);
+
 const users = [
   {
     name: 'System',
@@ -337,4 +339,5 @@ export {
   userRoles,
   userStatus,
   users,
+  payoutstatuses,
 };

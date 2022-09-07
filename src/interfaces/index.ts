@@ -217,6 +217,24 @@ InferAttributes<IUserStatus>, InferCreationAttributes<IUserStatus>
   name: string;
 }
 
+interface IPayout extends Model<
+InferAttributes<IPayout>, InferCreationAttributes<IPayout>
+> {
+  id?: number;
+  userId?: number;
+  payoutStatusId: number;
+  amount: number | string;
+  createdBy: number;
+  updatedBy: number;
+}
+
+interface IPayoutStatus extends Model<
+InferAttributes<IPayoutStatus>, InferCreationAttributes<IPayoutStatus>
+> {
+  id?: number;
+  name: string;
+}
+
 interface ITransactions extends Model<
 InferAttributes<ITransactions>, InferCreationAttributes<ITransactions>
 > {
@@ -246,4 +264,6 @@ export {
   ITransactions,
   IVariables,
   IDashboardSettings,
+  IPayout,
+  IPayoutStatus,
 };
