@@ -198,6 +198,7 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   updatedBy?: number;
 }
 
+type ICustomUser = Pick<IUser, 'id' | 'name' | 'email' | 'password' | 'googleId' | 'userRoleId' | 'userStatusId' | 'totalRevenue' | 'paidRevenue' | 'image' | 'rejectionReason' | 'createdBy' | 'updatedBy' >;
 interface IWatches extends Model<
 InferAttributes<IWatches>, InferCreationAttributes<IWatches>
 > {
@@ -267,4 +268,5 @@ export {
   IDashboardSettings,
   IPayout,
   IPayoutStatus,
+  ICustomUser,
 };
