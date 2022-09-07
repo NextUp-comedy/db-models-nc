@@ -224,6 +224,7 @@ InferAttributes<IPayout>, InferCreationAttributes<IPayout>
   userId?: number;
   payoutStatusId: number;
   amount: number | string;
+  rejectionReason?: string;
   createdBy: number;
   updatedBy: number;
 }

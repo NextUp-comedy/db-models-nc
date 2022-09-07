@@ -22,6 +22,9 @@ const Payout = sequelize.define<IPayout>(
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
+    rejectionReason: {
+      type: DataTypes.STRING,
+    },
     createdBy: {
       type: DataTypes.INTEGER,
     },
