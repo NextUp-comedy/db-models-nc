@@ -66,7 +66,11 @@ const userStatus = [
   },
 ];
 
-const payoutStatuses = userStatus.slice(0, 3);
+const payoutStatuses = userStatus.slice(0, 3).concat({
+  name: 'CANCELLED',
+  updated_at: new Date(),
+  created_at: new Date(),
+});
 
 const users = [
   {
