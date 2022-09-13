@@ -29,4 +29,5 @@ const config = (): IDatabase => {
     ENCRYPTION_SECRET_KEY: envVars.ENCRYPTION_SECRET_KEY,
   };
 };
+
 export default config();

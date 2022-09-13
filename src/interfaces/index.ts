@@ -102,6 +102,8 @@ InferAttributes<IContent>, InferCreationAttributes<IContent>
   primaryCategory:string;
   recoveredCosts: string;
   contentReports?: IContentReport[];
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 interface IContentReport extends Model<
@@ -124,7 +126,9 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   splittableBeforeExpRevenue:string | null;
   reimbursementBeforeExpRevenue:string | null;
   afterExpRevenue:string | null;
-  report?:IReport;
+  report?: IReport;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 interface IReport extends Model<
@@ -139,6 +143,8 @@ InferAttributes<IReport>, InferCreationAttributes<IReport>
   createdBy: number;
   updatedBy: number;
   contentReports?: IAccumulatedWatchesDurationPerContent[];
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 interface IUserRole extends Model<
@@ -196,6 +202,8 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   rejectionReason?: string;
   createdBy: number;
   updatedBy?: number;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 type ICustomUser = Pick<IUser, 'id' | 'name' | 'email' | 'password' | 'googleId' | 'userRoleId' | 'userStatusId' | 'totalRevenue' | 'paidRevenue' | 'image' | 'rejectionReason' | 'createdBy' | 'updatedBy' >;
@@ -228,6 +236,8 @@ InferAttributes<IPayout>, InferCreationAttributes<IPayout>
   rejectionReason?: string;
   createdBy: number;
   updatedBy: number;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 interface IPayoutStatus extends Model<
@@ -251,6 +261,8 @@ InferAttributes<ITransactions>, InferCreationAttributes<ITransactions>
   contentReportId : number;
   revenue: number;
   nextUpToOwedSplitPercentage: number;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export {
