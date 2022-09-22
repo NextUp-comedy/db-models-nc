@@ -41,6 +41,14 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
     .decrypt(password, ENCRYPTION_SECRET_KEY)
     .toString(enc.Utf8);
 
+  let stripeKey = encryptedVariables?.stripeKey;
+  if (!stripeKey) throw new Error('stripeKey not found');
+  // ? stripeKey
+
+  stripeKey = AES
+    .decrypt(stripeKey, ENCRYPTION_SECRET_KEY)
+    .toString(enc.Utf8);
+
   return {
     nextUpToOwedSplitPercentage,
     systemActivationDate,
@@ -50,6 +58,7 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
     maxCount,
     expiredAfterInYears,
     limit,
+    stripeKey,
   };
 };
 

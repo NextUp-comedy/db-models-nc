@@ -166,6 +166,7 @@ interface IVariables {
   };
   encryptedVariables: {
     viewliftPassword: string;
+    stripeKey: string;
   };
 }
 
@@ -178,6 +179,7 @@ interface IDashboardSettings {
   viewliftEndpoint: string;
   limit: number;
   password: string;
+  stripeKey: string;
 }
 
 interface ISettings extends Model<InferAttributes<ISettings>, InferCreationAttributes<ISettings>> {
