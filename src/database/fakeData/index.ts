@@ -13,6 +13,7 @@ const settings = [
       },
       encryptedVariables: {
         viewliftPassword: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
+        stripeKey: 'U2FsdGVkX1+6ph+Vx39ZD+B2d+CoPgyuOBso2YEGaWa9lH36zJU5wq9vdgDrQ1axQaOYjqyEQLXe66zRuMzgRvnlvG3OC6gPErcRdiDv/kSkoI9DIg8c/gM0PE7dnv50WHm3Yiy6BPgBBMkj8Irtlax8KxEAU/9x4PxuLT9SYNc=',
       },
     }),
     updated_at: new Date(),

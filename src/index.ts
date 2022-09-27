@@ -38,3 +38,4 @@ export {
   ICustomUser,
 } from './interfaces';
 export { default as getDashboardSettings } from './utils';
+export { default as migration } from './migration';
