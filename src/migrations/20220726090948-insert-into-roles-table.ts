@@ -1,4 +1,4 @@
-import { userRoles } from 'db-models-nc';
+import { userRoles } from '..';
 import { Migration } from '../migration';
 
 const up: Migration = async ({ context: queryInterface }) => {

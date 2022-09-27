@@ -1,4 +1,4 @@
-import { payoutStatuses } from 'db-models-nc';
+import { payoutStatuses } from '..';
 import { Migration } from '../migration';
 
 const up:Migration = async ({ context: queryInterface }) => {

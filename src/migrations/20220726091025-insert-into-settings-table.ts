@@ -1,4 +1,4 @@
-import { settings } from 'db-models-nc';
+import { settings } from '..';
 import { Migration } from '../migration';
 
 const up: Migration = async ({ context: queryInterface }) => {
