@@ -202,6 +202,7 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   paidRevenue: number | Big | string;
   image?: string;
   rejectionReason?: string;
+  stripeAccountId?: string;
   createdBy: number;
   updatedBy?: number;
   createdAt?: string;

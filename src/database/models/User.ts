@@ -48,6 +48,9 @@ const User = sequelize.define<IUser>(
     rejectionReason: {
       type: DataTypes.STRING,
     },
+    stripeAccountId: {
+      type: DataTypes.STRING,
+    },
     createdBy: {
       type: DataTypes.INTEGER,
     },
