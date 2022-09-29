@@ -1,12 +1,12 @@
 import { AES, enc } from 'crypto-js';
 import { Settings } from '../database';
-import { IDashboardSettings } from '../interfaces';
+import { IDashboardSettings, IVariables } from '../interfaces';
 import config from '../config';
 
 const { ENCRYPTION_SECRET_KEY } = config;
 
 const getDashboardSettings = async (): Promise<IDashboardSettings> => {
-  const settings = (await Settings.findOne({ where: { name: 'variables' } }))?.value;
+  const settings = (await Settings.findOne({ where: { name: 'variables' } }))?.value as IVariables;
   const regularVariables = settings?.regularVariables;
   const encryptedVariables = settings?.encryptedVariables;
 
@@ -62,4 +62,10 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   };
 };
 
-export default getDashboardSettings;
+const getPlansFromSettings = async (): Promise<{ [key: string]: number }> => {
+  const plans = (await Settings.findOne({ where: { name: 'plans' } }))?.value as { [key: string]: number };
+
+  return plans;
+};
+
+export { getDashboardSettings, getPlansFromSettings };

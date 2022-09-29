@@ -37,5 +37,5 @@ export {
   IPayoutStatus,
   ICustomUser,
 } from './interfaces';
-export { default as getDashboardSettings } from './utils';
+export { getDashboardSettings, getPlansFromSettings } from './utils';
 export { default as migration } from './migration';

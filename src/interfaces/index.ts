@@ -185,7 +185,7 @@ interface IDashboardSettings {
 interface ISettings extends Model<InferAttributes<ISettings>, InferCreationAttributes<ISettings>> {
   id?: number;
   name: string;
-  value: IVariables;
+  value: unknown;
 }
 
 interface IUser extends Model<

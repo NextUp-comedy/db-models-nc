@@ -19,6 +19,12 @@ const settings = [
     updated_at: new Date(),
     created_at: new Date(),
   },
+  {
+    name: 'plans',
+    values: JSON.stringify({
+      'woei-fwoiefjwefwef': 1,
+    }),
+  },
 ];
 
 const userRoles = [
