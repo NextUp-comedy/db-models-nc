@@ -113,36 +113,20 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   contentId: string;
   reportId?: number;
   watchedSeconds: number;
-  revenue: string;
+  revenue: string | Big;
   createdBy: number;
   updatedBy: number;
   tvodTicketsCount: number;
   tvodSeconds: number;
-  watches?: IWatchedStream[];
-  nextupRevenue: string | null;
-  owedRevenue: string | null;
-  beforeExpiryReportDaysPercentage: string | null;
-  beforeExpRevenue: string | null;
-  splittableBeforeExpRevenue:string | null;
-  reimbursementBeforeExpRevenue:string | null;
-  afterExpRevenue:string | null;
+  watches?: IWatchedStream[] | IDbWatches[];
+  nextupRevenue: string | Big | null;
+  owedRevenue: string | Big | null;
+  beforeExpiryReportDaysPercentage: string | Big | null;
+  beforeExpRevenue: string | Big | null;
+  splittableBeforeExpRevenue: string | Big | null;
+  reimbursementBeforeExpRevenue: string | null;
+  afterExpRevenue: string | Big | null;
   report?: IReport;
-  createdAt?: string;
-  updatedAt?: string;
-}
-
-interface IReport extends Model<
-InferAttributes<IReport>, InferCreationAttributes<IReport>
-> {
-  id?: number;
-  watchTimeFrom: string;
-  watchTimeTo: string;
-  overallWatchedSeconds: number;
-  totalRevenue: number;
-  nextUpToOwedSplitPercentage: string;
-  createdBy: number;
-  updatedBy: number;
-  contentReports?: IAccumulatedWatchesDurationPerContent[];
   createdAt?: string;
   updatedAt?: string;
 }
