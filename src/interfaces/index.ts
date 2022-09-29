@@ -131,6 +131,22 @@ InferAttributes<IContentReport>, InferCreationAttributes<IContentReport>
   updatedAt?: string;
 }
 
+interface IReport extends Model<
+InferAttributes<IReport>, InferCreationAttributes<IReport>
+> {
+  id?: number;
+  watchTimeFrom: string;
+  watchTimeTo: string;
+  overallWatchedSeconds: number;
+  totalRevenue: number;
+  nextUpToOwedSplitPercentage: string;
+  createdBy: number;
+  updatedBy: number;
+  contentReports?: IAccumulatedWatchesDurationPerContent[];
+  createdAt?: string;
+  updatedAt?: string;
+}
+
 interface IUserRole extends Model<
 InferAttributes<IUserRole>, InferCreationAttributes<IUserRole>
 > {
