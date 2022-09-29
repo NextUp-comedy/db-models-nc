@@ -137,7 +137,7 @@ InferAttributes<IReport>, InferCreationAttributes<IReport>
   id?: number;
   watchTimeFrom: string;
   watchTimeTo: string;
-  overallWatchedSeconds: number;
+  overallWatchedSeconds?: number;
   totalRevenue: number;
   nextUpToOwedSplitPercentage: string;
   createdBy: number;
