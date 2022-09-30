@@ -21,11 +21,9 @@ const Report = sequelize.define<IReport>(
     },
     overallWatchedSeconds: {
       type: DataTypes.BIGINT,
-      allowNull: false,
     },
     totalRevenue: {
       type: DataTypes.DECIMAL,
-      allowNull: false,
     },
     nextUpToOwedSplitPercentage: {
       type: DataTypes.DECIMAL,

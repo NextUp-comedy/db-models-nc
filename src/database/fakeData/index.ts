@@ -21,9 +21,11 @@ const settings = [
   },
   {
     name: 'plans',
-    values: JSON.stringify({
+    value: JSON.stringify({
       'woei-fwoiefjwefwef': 1,
     }),
+    updated_at: new Date(),
+    created_at: new Date(),
   },
 ];
 
