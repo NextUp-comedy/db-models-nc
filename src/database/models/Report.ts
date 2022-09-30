@@ -24,7 +24,6 @@ const Report = sequelize.define<IReport>(
     },
     totalRevenue: {
       type: DataTypes.DECIMAL,
-      allowNull: false,
     },
     nextUpToOwedSplitPercentage: {
       type: DataTypes.DECIMAL,
