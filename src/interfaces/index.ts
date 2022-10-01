@@ -233,7 +233,7 @@ interface IPayout extends Model<
 InferAttributes<IPayout>, InferCreationAttributes<IPayout>
 > {
   id?: number;
-  userId?: number;
+  userId: number;
   payoutStatusId: number;
   amount: number | string;
   rejectionReason?: string;
