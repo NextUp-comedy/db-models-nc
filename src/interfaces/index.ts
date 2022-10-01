@@ -241,6 +241,7 @@ InferAttributes<IPayout>, InferCreationAttributes<IPayout>
   updatedBy: number;
   createdAt?: string;
   updatedAt?: string;
+  user?:IUser;
 }
 
 interface IPayoutStatus extends Model<
