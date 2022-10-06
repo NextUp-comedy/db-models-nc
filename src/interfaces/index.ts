@@ -202,7 +202,7 @@ InferAttributes<IUser>, InferCreationAttributes<IUser>
   paidRevenue: number | Big | string;
   image?: string;
   rejectionReason?: string;
-  stripeAccountId?: string;
+  stripeAccount?: string;
   createdBy: number;
   updatedBy?: number;
   createdAt?: string;
@@ -233,14 +233,15 @@ interface IPayout extends Model<
 InferAttributes<IPayout>, InferCreationAttributes<IPayout>
 > {
   id?: number;
-  userId?: number;
+  userId: number;
   payoutStatusId: number;
-  amount: number | string;
+  amount: number | Big | string;
   rejectionReason?: string;
   createdBy: number;
   updatedBy: number;
   createdAt?: string;
   updatedAt?: string;
+  user?:IUser;
 }
 
 interface IPayoutStatus extends Model<

@@ -4,12 +4,13 @@ const settings = [
     value: JSON.stringify({
       regularVariables: {
         nextupToOwedSplitPercentage: '0.5',
-        systemActivationDate: '2022-08-30',
+        systemActivationDate: '2022-09-29',
         fetchMaxCount: '10',
         expiredAfterInYears: '2',
         viewliftEmail: 'ibrahim.jarada@gmail.com',
         viewliftEndpoint: 'https://export-api.viewlift.com',
         viewliftWatchesFetchLimit: '1000',
+        calculatorEndpoint: 'https://sjtisy3q46.execute-api.us-east-2.amazonaws.com/dev/',
       },
       encryptedVariables: {
         viewliftPassword: 'U2FsdGVkX1/3B+fSkAa/x9w21hKYPlsV1an8kbIxGDA=',
