@@ -32,6 +32,9 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   // ? VIEWLIFT_WATCHES_FETCH_LIMIT
   const limit = Number(regularVariables?.viewliftWatchesFetchLimit);
   if (!limit) throw new Error('viewLiftWatchesFetchLimit not found');
+  // ? VIEWLIFT_EMAIL
+  const calculatorEndpoint = regularVariables?.calculatorEndpoint;
+  if (!calculatorEndpoint) throw new Error('calculatorEndpoint not found');
 
   let password = encryptedVariables?.viewliftPassword;
   if (!password) throw new Error('viewLiftPassword not found');
@@ -59,6 +62,7 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
     expiredAfterInYears,
     limit,
     stripeKey,
+    calculatorEndpoint,
   };
 };
 
