@@ -4,7 +4,7 @@ const settings = [
     value: JSON.stringify({
       regularVariables: {
         nextupToOwedSplitPercentage: '0.5',
-        systemActivationDate: '2022-08-30',
+        systemActivationDate: '2022-09-29',
         fetchMaxCount: '10',
         expiredAfterInYears: '2',
         viewliftEmail: 'ibrahim.jarada@gmail.com',
