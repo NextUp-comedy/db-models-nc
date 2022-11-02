@@ -123,8 +123,8 @@ const payoutStatuses = userStatus.slice(0, 3).concat({
 const users = [
   {
     name: 'System',
-    email: 'system@gmail.com',
-    password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
+    email: 'nextup.comedy22@gmail.com',
+    password: '$2b$10$m8ZV7QOrCLHlvXroQZgz5.qUds1eIXy1rD4S7kNR1Hl6w4CHu5l6u',
     user_role_id: 1,
     user_status_id: 2,
     total_revenue: 0,
@@ -137,12 +137,12 @@ const users = [
   {
     name: 'Master Admin',
     email: 'masteradmin@gmail.com',
-    password: '$2b$10$O2cKyz8IAgx0jI2OO89j0uZWX9avosPQQ3xWZzcQn7fP/Y3OeFfXG',
+    password: '$2b$10$m8ZV7QOrCLHlvXroQZgz5.qUds1eIXy1rD4S7kNR1Hl6w4CHu5l6u',
     user_role_id: 2,
     user_status_id: 2,
     total_revenue: 0,
     paid_revenue: 0,
-    image: 'https://nextup-comedy-bucket-gfs.s3.eu-west-2.amazonaws.com/2/1660034083405.jpeg',
+    image: 'https://s3-eu-west-1.amazonaws.com/tpd/logos/5ca5dcb59121e1000152fc2c/0x0.png',
     created_by: 1,
     updated_by: 1,
     updated_at: new Date(),
